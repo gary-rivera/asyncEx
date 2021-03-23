@@ -29,7 +29,10 @@ async function getPokemonSpecies() {
   const response = await axios.get(`${BASE_URL}/${pokemonLimit}`)
   let allPokemon = response.data.results
 
-  /* Promise-all to request each pokemon simultaneously */  
+  /* Promise-all to request each pokemon simultaneously 
+    - get array of names 
+    - 
+  */  
 
   for (let i = 0; i < 3; i++) {
     // get random pokemon name
